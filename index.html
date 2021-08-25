@@ -171,14 +171,18 @@
 <p><em>The state of Real Time Operating Systems in Rust.</em></p>
 <h2 id="status"><a class="header" href="#status">Status</a></h2>
 <p>We are not RTOS, yet.</p>
-<p>There are only a handful of RTOS' written in native rust, and of the few that
-exist even fewer compile on rust stable.</p>
+<p>There are only a handful of RTOS' written in rust, and only one of them compiles
+on stable.</p>
 <p>The future is bright for RTOS' in rust, the language has many features that
-benefit RTOS development;
-procedural macros allow <a href="https://rtic.rs/0.5/book/en/">RTIC</a> to guarantee deadlock-free execution at compile
-time, <code>no_std</code> executors allow <a href="https://github.com/embassy-rs/embassy">embassy</a> and <a href="https://www.drone-os.com/">drone</a> to provide cooperative
-scheduling with <code>await</code> syntax, and <code>const</code> functions allow <a href="https://crates.io/crates/r3">R3</a> to configure
-the RTOS as much as possible at compile time.</p>
+benefit RTOS development:</p>
+<ul>
+<li>Procedural macros allow <a href="https://rtic.rs/0.5/book/en/">RTIC</a> to guarantee deadlock-free execution at compile
+time.</li>
+<li><code>no_std</code> executors allow <a href="https://github.com/embassy-rs/embassy">embassy</a> and <a href="https://www.drone-os.com/">drone</a> to provide cooperative
+scheduling with <code>await</code> syntax</li>
+<li><code>const</code> functions allow <a href="https://crates.io/crates/r3">R3</a> to configure the RTOS as much as possible at
+compile time</li>
+</ul>
 <h2 id="ecosystem"><a class="header" href="#ecosystem">Ecosystem</a></h2>
 <table><thead><tr><th>Name</th><th>Native Rust</th><th>Compiles on stable</th><th>1.0 maturity</th></tr></thead><tbody>
 <tr><td><a href="https://www.drone-os.com/">drone</a></td><td>✅</td><td>❌</td><td>❌</td></tr>
@@ -187,6 +191,7 @@ the RTOS as much as possible at compile time.</p>
 <tr><td><a href="https://crates.io/crates/r3">R3</a></td><td>✅</td><td>❌</td><td>❌</td></tr>
 <tr><td><a href="https://rtic.rs/0.5/book/en/">RTIC</a></td><td>✅</td><td>✅</td><td>❌</td></tr>
 <tr><td><a href="https://www.tockos.org/">Tock</a></td><td>✅</td><td>❌</td><td>❌</td></tr>
+<tr><td><a href="https://github.com/HUST-OS/tornado-os">tornado</a></td><td>✅</td><td>❌</td><td>❌</td></tr>
 <tr><td><a href="https://github.com/tylerwhall/zephyr-rust">zephyr</a></td><td>❌</td><td>✅</td><td>❌</td></tr>
 </tbody></table>
 
